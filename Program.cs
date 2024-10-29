@@ -60,7 +60,7 @@ namespace DotNetRevision
       float valor = 25.5f;
       int outro = 25;
 
-      valor = outro;
+      valor = outro; // 25.0f
       Console.WriteLine(valor);
 
       //Conversão Explícita
@@ -75,6 +75,19 @@ namespace DotNetRevision
       //Convert 
       int inteiro2 = Convert.ToInt32("100");
       Console.WriteLine(inteiro2);
+
+      int intConvert = 100;
+      float floatConvert = 25.8f;
+
+      // floatConvert = intConvert; //100
+      // intConvert = (int)floatConvert; //25
+      // intConvert = int.Parse("100"); //string 100
+      // string stringConvert = floatConvert.ToString(); //25.8
+      intConvert = Convert.ToInt32(floatConvert); //26
+      Console.WriteLine(intConvert);
+
+      Console.WriteLine(Convert.ToBoolean(1)); //True
+
     }
   }
 }
