@@ -1,4 +1,6 @@
-﻿namespace TesteDotNet
+﻿using System.Security.Claims;
+
+namespace DotNetRevision
 {
   class Program
   {
@@ -42,6 +44,37 @@
       var meuVar2 = "Abraão Oliveira";
       Console.WriteLine(meuVar);
       Console.WriteLine(meuVar2);
+
+      //Object
+      object meuObject;
+      meuObject = 10;
+      Console.WriteLine(meuObject);
+      meuObject = "Abraão Oliveira";
+      Console.WriteLine(meuObject);
+
+      //Null
+      int? meuNull = null;
+      Console.WriteLine(meuNull);
+
+      //Conversão Implícita
+      float valor = 25.5f;
+      int outro = 25;
+
+      valor = outro;
+      Console.WriteLine(valor);
+
+      //Conversão Explícita
+      int valor2 = 28;
+      uint outro2 = (uint)valor2;
+      Console.WriteLine(outro2);
+
+      //Parse 
+      int inteiro = int.Parse("10");
+      Console.WriteLine(inteiro);
+
+      //Convert 
+      int inteiro2 = Convert.ToInt32("100");
+      Console.WriteLine(inteiro2);
     }
   }
 }
