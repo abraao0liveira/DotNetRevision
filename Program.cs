@@ -88,6 +88,53 @@ namespace DotNetRevision
 
       Console.WriteLine(Convert.ToBoolean(1)); //True
 
+      //Operações	Aritméticas
+      int soma = 10 + 5;
+      Console.WriteLine(soma);
+      int subtracao = 10 - 5;
+      Console.WriteLine(subtracao);
+      int multiplicacao = 10 * 5;
+      Console.WriteLine(multiplicacao);
+      int divisao = 10 / 5;
+      Console.WriteLine(divisao);
+
+      int x = 2 + 2 * 2;
+      Console.WriteLine(x); //6
+      int y = 2 + (2 * 2);
+      Console.WriteLine(y); //6
+      int z = (2 + 2) * 2;
+      Console.WriteLine(z); //8
+
+      //Operações de Atribuição
+      int a = 0;
+      a += 5; //5
+      a -= 3; //2
+      a *= 2; //4
+      a /= 2; //2
+      a++; //3
+      a--; //2
+      Console.WriteLine(a);
+
+      //Operadores de Comparação
+      int b = 10;
+      // b == 10; //True
+      // b != 10; //False
+      // b > 10; //False
+      // b < 10; //False
+      // b >= 10; //True
+      // b <= 10; //True
+      Console.WriteLine(Convert.ToBoolean(b));
+
+      //Operadores Lógicos
+      int c = 30;
+      bool entre = (c > 25) && (c < 40); //True
+      bool fora = (c > 25) || (c < 40); //True
+      bool negacao = !(c > 25); //False
+      Console.WriteLine(entre);
+      Console.WriteLine(fora);
+      Console.WriteLine(negacao);
+
+
     }
   }
 }
