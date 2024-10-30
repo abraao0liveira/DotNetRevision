@@ -229,6 +229,28 @@ namespace DotNetRevision
 
       var fullName = RetornaNome("Abraão", "Oliveira");
       Console.WriteLine(fullName);
+
+      //Valor
+      int valor01 = 10;
+      int valor02 = valor01;
+      Console.WriteLine(valor01); //10
+      Console.WriteLine(valor02); //10
+      valor01 = 20;
+      Console.WriteLine(valor01); //20
+      Console.WriteLine(valor02); //10
+
+      //Referência
+      var arr = new string[2];
+      arr[0] = "Intem 1";
+      var arr02 = arr;
+
+      Console.WriteLine(arr[0]); //Intem 1
+      Console.WriteLine(arr02[0]); //Intem 1
+
+      arr[0] = "Intem 2";
+      Console.WriteLine(arr[0]); //Item 2
+      Console.WriteLine(arr02[0]); //Item 2
+
     }
 
     //Função ou Método
