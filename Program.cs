@@ -134,6 +134,95 @@ namespace DotNetRevision
       Console.WriteLine(fora);
       Console.WriteLine(negacao);
 
+      //Estrutura If
+      if (c == 30)
+      {
+        Console.WriteLine("C é 30");
+      }
+      else
+      {
+        Console.WriteLine("C não é 30");
+      }
+
+      if (c > 25 && c < 40)
+      {
+        Console.WriteLine("C está entre 25 e 40");
+      }
+      else if (c == 30)
+      {
+        Console.WriteLine("C é 30");
+      }
+      else if (c > 40)
+      {
+        Console.WriteLine("C é maior que 40");
+      }
+      else
+      {
+        Console.WriteLine("C é menor que 25");
+      }
+
+      //Estrutura Switch
+      string dia = "Terça";
+
+      switch (dia)
+      {
+        case "Terça": Console.WriteLine("Hoje é Terça"); break;
+        case "Quarta": Console.WriteLine("Hoje é Quarta"); break;
+        case "Segunda": Console.WriteLine("Hoje é Segunda"); break;
+        default: Console.WriteLine("Dia nao encontrado"); break;
+      }
+
+      switch (dia)
+      {
+        case "Terça":
+          {
+            Console.WriteLine("Hoje é Segunda");
+            break;
+          }
+        case "Quarta":
+          {
+            Console.WriteLine("Hoje é Quarta");
+            break;
+          }
+        case "Segunda":
+          {
+            Console.WriteLine("Hoje é Segunda");
+            break;
+          }
+        default:
+          {
+            Console.WriteLine("Dia nao encontrado");
+            break;
+          }
+      }
+
+      //Estrutura For 
+      for (int i = 0; i <= 5; i++)
+      {
+        Console.WriteLine(i);
+      }
+      for (int e = 5; e >= 0; e--)
+      {
+        Console.WriteLine(e);
+      }
+
+      var teste = 0;
+
+      //Estrutura While
+      while (teste <= 5)
+      {
+        Console.WriteLine(teste);
+        teste++;
+      }
+
+      //Estrutura Do While
+      var w = 0;
+
+      do
+      {
+        Console.WriteLine("Deu certo");
+        w++;
+      } while (w < 5);
 
     }
   }
