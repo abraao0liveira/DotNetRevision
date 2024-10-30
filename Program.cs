@@ -251,6 +251,19 @@ namespace DotNetRevision
       Console.WriteLine(arr[0]); //Item 2
       Console.WriteLine(arr02[0]); //Item 2
 
+      //Struct
+      var product = new Product(1, "Mouse", 128.75f);
+      product.Id = 1;
+      product.Name = "Mouse";
+      product.Price = 128.75f;
+      Console.WriteLine(product.PriceInDolar(5.5f));
+
+      product.Id = 2;
+      product.Name = "Teclado";
+      product.Price = 250.75f;
+      Console.WriteLine(product.Id);
+      Console.WriteLine(product.Name);
+      Console.WriteLine(product.Price);
     }
 
     //Função ou Método
@@ -266,6 +279,27 @@ namespace DotNetRevision
      )
     {
       return nome + " " + sobreNome + " - " + idade.ToString();
+    }
+  }
+
+  //Struct
+  struct Product
+  {
+    //Construtor
+    public Product(int id, string name, float price)
+    {
+      Id = id;
+      Name = name;
+      Price = price;
+    }
+    //Propriedades
+    public int Id;
+    public string Name;
+    public float Price;
+    //Métodos
+    public float PriceInDolar(float dolar)
+    {
+      return Price * dolar;
     }
   }
 }
