@@ -224,6 +224,26 @@ namespace DotNetRevision
         w++;
       } while (w < 5);
 
+      //Função ou Método
+      MeuMetodo("Hello MeuMetodo");
+
+      var fullName = RetornaNome("Abraão", "Oliveira");
+      Console.WriteLine(fullName);
+    }
+
+    //Função ou Método
+    static void MeuMetodo(string frase)
+    {
+      Console.WriteLine(frase);
+    }
+
+    static string RetornaNome(
+      string nome, //Parâmetro Obrigatório
+      string sobreNome,
+      int idade = 0 //Parâmetro Opcional
+     )
+    {
+      return nome + " " + sobreNome + " - " + idade.ToString();
     }
   }
 }
