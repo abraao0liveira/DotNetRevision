@@ -1,11 +1,11 @@
 # Tecnologias
 - C#
-- .Net
+- .NET
 
 # Como rodar o código?
 
 ## Pré-requisitos
-- .Net
+- .NET
 
 ## [1] Primeiro, rodar os comandos dotnet
 - dotnet restore
