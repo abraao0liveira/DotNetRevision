@@ -252,18 +252,26 @@ namespace DotNetRevision
       Console.WriteLine(arr02[0]); //Item 2
 
       //Struct
-      var product = new Product(1, "Mouse", 128.75f);
+      var product = new Product(1, "Mouse", 128.75f, EProductType.Product);
       product.Id = 1;
-      product.Name = "Mouse";
+      product.ProductName = "Mouse";
       product.Price = 128.75f;
       Console.WriteLine(product.PriceInDolar(5.5f));
 
+      var manutencao = new Product(2, "Manutenção de Computadores", 100.00f, EProductType.Service);
+      Console.WriteLine(manutencao.ProductType);
+
       product.Id = 2;
-      product.Name = "Teclado";
+      product.ProductName = "Teclado";
       product.Price = 250.75f;
       Console.WriteLine(product.Id);
-      Console.WriteLine(product.Name);
+      Console.WriteLine(product.ProductName);
       Console.WriteLine(product.Price);
+
+      //Enum
+      var estadoCivil = new Person("João", 25, EEstadoCivil.Casado);
+      Console.WriteLine(estadoCivil.EstadoCivil); //Casado
+      Console.WriteLine((int)estadoCivil.EstadoCivil); //2
     }
 
     //Função ou Método
@@ -286,20 +294,50 @@ namespace DotNetRevision
   struct Product
   {
     //Construtor
-    public Product(int id, string name, float price)
+    public Product(int id, string productName, float price, EProductType productType)
     {
       Id = id;
-      Name = name;
+      ProductName = productName;
       Price = price;
+      ProductType = productType;
     }
     //Propriedades
     public int Id;
-    public string Name;
+    public string ProductName;
     public float Price;
+    public EProductType ProductType; //Enum
     //Métodos
     public float PriceInDolar(float dolar)
     {
       return Price * dolar;
     }
+  }
+
+  struct Person
+  {
+    public Person(string name, int age, EEstadoCivil estadoCivil)
+    {
+      Name = name;
+      Age = age;
+      EstadoCivil = estadoCivil;
+    }
+    public string Name;
+    public int Age;
+    public EEstadoCivil EstadoCivil; //Enum
+  }
+
+  //Enum
+  enum EEstadoCivil
+  {
+    Solteiro = 1,
+    Casado = 2,
+    Divorciado = 3,
+    Viuvo = 4
+  }
+
+  enum EProductType
+  {
+    Product = 1,
+    Service = 2
   }
 }
