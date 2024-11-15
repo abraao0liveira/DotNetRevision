@@ -1,5 +1,0 @@
-C:\Users\abraa\OneDrive\Documentos\Projects\DotNetRevision\obj\Debug\net8.0\DotNetRevision.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\abraa\OneDrive\Documentos\Projects\DotNetRevision\obj\Debug\net8.0\DotNetRevision.AssemblyInfoInputs.cache
-C:\Users\abraa\OneDrive\Documentos\Projects\DotNetRevision\obj\Debug\net8.0\DotNetRevision.AssemblyInfo.cs
-C:\Users\abraa\OneDrive\Documentos\Projects\DotNetRevision\obj\Debug\net8.0\DotNetRevision.csproj.CoreCompileInputs.cache
-C:\Users\abraa\OneDrive\Documentos\Projects\DotNetRevision\obj\Debug\net8.0\DotNetRevision.sourcelink.json
