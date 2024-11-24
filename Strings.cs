@@ -2,10 +2,11 @@ using System.Text;
 
 namespace DotNetRevision
 {
-  class Strings
+  public class Strings
   {
     public static void StringRevision()
     {
+      Console.Clear();
       //Guids
       //Hashs
       var id = Guid.NewGuid(); //Guid.NewGuid() gera um novo Guid, um hash único

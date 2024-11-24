@@ -270,6 +270,12 @@
       var estadoCivil = new Person("João", 25, EEstadoCivil.Casado);
       Console.WriteLine(estadoCivil.EstadoCivil); //Casado
       Console.WriteLine((int)estadoCivil.EstadoCivil); //2
+
+      //Puxando a Classe Strings
+      Strings.StringRevision();
+
+      //Puxando a Classe Datas
+      Dates.DateRevision();
     }
 
     //Função ou Método
