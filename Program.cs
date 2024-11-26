@@ -279,6 +279,9 @@
 
       //Puxando a Classe Moedas
       Coins.CoinsRevision();
+
+      //Puxando a Classe Arrays
+      Arrays.ArraysRevision();
     }
 
     //Função ou Método

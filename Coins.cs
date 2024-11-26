@@ -24,7 +24,7 @@ namespace DotNetRevision
       Console.WriteLine(coin.ToString("N", cultureJP)); //12
 
       //Moedas com arredondamento
-      Console.WriteLine(Math.Round(coin, 0)); //12, arrerdonda pra 0 casas decimais
+      Console.WriteLine(Math.Round(coin, 0)); //12, arre
       Console.WriteLine(Math.Ceiling(coin)); //13, pra cima
       Console.WriteLine(Math.Floor(coin)); //12, pra baixo
     }
