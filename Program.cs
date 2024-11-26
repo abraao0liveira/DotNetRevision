@@ -276,6 +276,9 @@
 
       //Puxando a Classe Datas
       Dates.DateRevision();
+
+      //Puxando a Classe Moedas
+      Coins.CoinsRevision();
     }
 
     //Função ou Método
