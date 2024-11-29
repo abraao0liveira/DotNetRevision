@@ -282,6 +282,9 @@
 
       //Puxando a Classe Arrays
       Arrays.ArraysRevision();
+
+      //Puxando a Classe Exceptions
+      Exceptions.ExceptionsRevision();
     }
 
     //Função ou Método
